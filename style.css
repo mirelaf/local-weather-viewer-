@@ -1,0 +1,124 @@
+body {
+  background-color: #004e66;
+  height: 100%;
+}
+
+.container {
+  text-align: center;
+  margin: 0px;
+}
+
+.element {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.title {
+  text-align: center;
+  font-family: Aharoni, sans-serif;
+  color: #E1EEF6;
+  font-size: 4vw;
+}
+
+.location {
+  text-align: center;
+  font-family: Aharoni, Trebuchet, sans-serif;
+  color: #FCBE32;
+  font-size: 4vw;
+}
+
+.temperature {
+  text-align: center;
+  font-family: Aharoni, Trebuchet, sans-serif;
+  color: #FCBE32;
+  font-size: 4vw;
+  margin-right: 25px;
+}
+
+a.scale-switch-link:link, a.scale-switch-link:visited, a.scale--switch-link:hover {
+  font-family: Aharoni, Trebuchet, sans-serif;
+  color: #FCBE32;
+  font-size: 4vw;
+} 
+
+.description {
+  text-align: center;
+  font-family: Aharoni, Trebuchet, sans-serif;
+  color: #FF5F2E;
+  font-size: 3vw;
+}
+
+.footer {
+  color: white;
+  font-size: 1.3vw;
+  padding: 5px 0px 5px 0px;
+  font-family: sans-serif;
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+}
+
+a.footer-link:hover, a.footer-link:link, a.footer-link:visited {
+  text-decoration: underline;
+  color: white;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 25px;
+}
+
+.switch-text {
+  color: white;
+  font-family: sans-serif;
+  font-size: 3vw;
+  position: relative;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #E1EEF6;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 5px;
+  bottom: 5px;
+  background-color: #004e66;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #E1EEF6;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  transform: translateX(15px);
+}
